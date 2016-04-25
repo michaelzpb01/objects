@@ -1,0 +1,181 @@
+@charset "utf-8";
+/* XuShu 2015-11-26 Login and Reg */
+/*Login*/
+#login, #reg, #findpwd-1, #findpwd-2, #findpwd-3 {
+	margin: 2.6875rem auto 0 auto;
+	padding-top: 1.1875rem;
+	width: 18.5rem;
+}
+#findpwd-2 {
+	padding-top: 0.4375rem;
+}
+.user-input {
+	padding-bottom: 10px;
+}
+.user-input input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	display: block;
+	padding: 0 0.5625rem;
+	width: 17.375rem;
+	height: 2.0625rem;
+	line-height: 2.0625rem;
+	font-size: 0.6875rem;
+	border: 1px solid #e7e7e7;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+#pwd {
+	margin-top: 0.625rem;
+}
+#remember-me, #im-agree {
+	clear: both;
+	margin-top: -0.625rem;
+	font-size: 0.6875rem;
+	line-height: 2.5625rem;
+	color: #999;
+}
+#remember-me input, #im-agree input {
+	margin-right: 0.375rem;
+}
+#login-btn, #reg-btn, .find-btn, .orange_btn_l {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 18.5rem;
+	height: 36px;
+	border-width: 0;
+	background-color: #ff7519;
+	color: #fff;
+	text-align: center;
+	line-height: 36px;
+	font-size: 0.875rem;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+#login-bottom {
+	margin-top: 1.125rem;
+	line-height: 1.75rem;
+	font-size: 0.6875rem;
+}
+#go-reg, #forget {
+	color: #666;
+	text-decoration: underline;
+}
+#go-reg {
+	float: left;
+}
+#forget {
+	float: right;
+}
+/*Register*/
+#reg-btn.disabled {
+	background-color: #e2e2e2;
+}
+#reg-code {
+	letter-spacing: 0;
+}
+#code-img {
+	margin-left: 0.625rem;
+	min-width: 5rem;
+	max-width: 5rem;
+	min-height: 2.125rem;
+	max-height: 2.125rem;
+}
+#change-code {
+	font-size: 0.6875rem;
+	color: #ff7519;
+}
+#write-code {
+	float: left;
+	width: 8.875rem;
+}
+#change-code {
+	float: right;
+	height: 2.125rem;
+	word-break: keep-all;
+    line-height: 2.125rem;
+}
+#phone-code {
+	float: left;
+	width: 9.125rem;
+}
+#sent-message {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	float: left;
+	margin-left: 0.625rem;
+	width: 7.375rem;
+	border: 1px solid #ffb685;
+	background: none;
+	color: #ff7519;
+}
+#sent-message.waiting {
+	background-color: #e2e2e2;
+	border-color: #C6C6C6;
+	color: #999999;
+}
+#set-pwd {
+	position: relative;
+}
+#eyes {
+	position: absolute;
+	right: -0.4rem;
+	top: 0;
+	width: 2.0625rem;
+	height: 2.0625rem;
+	color: #cccccc;
+	font-size: 16px;
+	text-align: center;
+	line-height: 2.125rem;
+}
+.find-btn {
+	margin-top: 0.625rem;
+}
+#user-telnumber {
+	font-size: 0.6875rem;
+	line-height: 2rem;
+}
+#im-agree .blue-link {
+	color: #1f96f2;
+	text-decoration: underline;
+}
+/*Find password*/
+#findpwd-1, #findpwd-2, #findpwd-3 {
+	display: none;
+}
+/*Tip*/
+#showBox{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	min-height: 4rem;
+	width: 40%;
+	text-align: center;
+	line-height: 4rem;
+	background: rgba(0, 0, 0, .5);
+	-webkit-border-radius: 0.4375rem;
+	-moz-border-radius: 0.4375rem;
+	-ms-border-radius: 0.4375rem;
+	-o-border-radius: 0.4375rem;
+	border-radius: 0.4375rem;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+#showInfo{
+	color: #fff;
+}
