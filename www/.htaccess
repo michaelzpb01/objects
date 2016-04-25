@@ -1,0 +1,11 @@
+RewriteEngine on
+RewriteRule ^item-([0-9]+)-([0-9]+)-([0-9]+).html index.php?v=show&cid=$1&id=$2&page=$3
+RewriteRule ^show-([0-9]+)-([0-9]+)-([0-9]+).html index.php?v=show&cid=$1&id=$2&page=$3
+RewriteRule ^list-([0-9]+)-([0-9]+).html index.php?v=listing&cid=$1&page=$2
+RewriteRule ^xiaoguotu/([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)-([0-9])-([0-9]+).html$ /photos/index.php?v=init&style=$1&house=$2&area=$3&cost=$4&color=$5&order=$6&page=$7
+
+RewriteRule ^xiaoguotu/$ /photos/index.php?v=init&style=0&house=0&area=0&cost=0&color=0&order=0&page=1 
+#photo-folder-detail
+RewriteRule ^xiaoguotu/([0-9]+)-([0-9]+)-([0-9]+).html /index.php?v=show&cid=$1&id=$2&page=$3 
+RewriteRule ^xiaoguotu/show-([0-9]+)-([0-9]+)-([0-9]+).html /index.php?v=show&cid=$1&id=$2&page=$3 
+RewriteRule ^image\/(\w+)\/(\w+\.(jpg|jpeg|png|gif)) index.php?m=company&f=photo&v=image_show&type=$1&imgSrc=$2

@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, minimal-ui"/>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<!--iphone桌面快捷方式图标<link rel="apple-touch-icon" href="custom_icon.png">-->
+<meta charset="utf-8">
+<meta name="keywords" content="装修管家,量房设计,装修施工,材料商城,环保方案,装修服务,装修图库,建材商城,装修攻略、优装网、装修网、优装美家">
+<meta name="description" content="优装美家为您提供免费专业咨询、免费量房、免费设计、免费装修保险、免费环保检测、优装网-专业装修网优选装修公司、优选建材商品、优选装修管家、优选环保服务">
+<title>优装美家_让装修从此不烦•不凡_优装网-专业装修网</title>
+<link href="{R}msite/base/css/base.css" rel="stylesheet" type="text/css">
+<link href="{R}msite/company/css/company-detail.css" rel="stylesheet" type="text/css">
+<link href="{R}msite/company/css/designer-list.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id='share_logo' style='margin:0 auto;display:none;'> 
+  <img src="base/img/share_logo.jpg"/> 
+</div>
+<!--Top Bar Start-->
+<header>
+    <!--<a id="logo" href="##" target="_self" title="优装美家"><i class="iconfont icon-jingyu"></i></a>--> 
+    <a id="go-back" href="##" target="_self" title="优装美家"><i class="iconfont icon-goback"></i></a>
+	<!-- <div class="city">
+		<a href="##" class="current-city">北京<i class="iconfont icon-xiajiantou"></i></a>
+	</div> -->
+	<h1 class="header-title">口碑公司</h1>
+	<div id="menu" title="菜单"><i class="iconfont icon-cedaohang"></i></div>
+</header>
+<section id="right-menu">
+	<div class="sidebar-bg"></div>
+	<aside id="sidebar">
+        <ul class="sidebar-ul">
+            <li>
+                <a href="mobile-cases.html" class="link-a"><i class="iconfont icon-tuku"></i><p>精品案例</p><i class="iconfont icon-arrow"></i></a>
+            </li>
+            <li>
+                <a href="##" class="link-a"><i class="iconfont icon-koubei"></i><p>口碑公司</p><i class="iconfont icon-arrow"></i></a>
+            </li>
+            <!-- <li>
+                <a href="##" class="link-a"><i class="iconfont icon-gongdi"></i><p>工地直播</p><i class="iconfont icon-arrow"></i></a>
+            </li> -->
+            <li>
+                <a href="mobile-user_home.html" class="link-a"><i class="iconfont icon-shejishi"></i><p>我的美家</p><i class="iconfont icon-arrow"></i></a>
+            </li>
+        </ul>
+        <a id="apply" href="mobile-application.html?id=M站-菜单页">我要装修</a>
+        <a id="bottom-tel" href="tel:400-6171-666"><i class="iconfont icon-dianhua"></i><span class="telephone">400-6171-666</span></a>
+    </aside>
+</section>
+<!--Top Bar End-->
+
+<!--Main Content Start-->
+<section id="company-detail" class="container">
+	<!--Company Head Start-->
+	<div id="company-head" class="clearfix">
+    	<script type="text/template" id="company-head-template">
+			<img src=<%=companys_data.company.companylogo%>>
+			<div class="right">
+				<h1 class="company-name"><%=companys_data.company.title%></h1>
+				<h2 class="company-tag"><%=companys_data.company.tese[0]%></h2>
+				<div class="btns">
+					<a id="apply-btn" href="#">预约</a>
+					<a id="favor-btn" href="javascript:"><span class="icon-star_one iconfont"></span>收藏</a>
+				</div>
+			</div>
+		</script>
+    </div>
+    <!--Company Head End-->
+    <!--Score Start-->
+    <div id="company-score">
+    	<div id="total">
+        	<p id="total-score">4.2</p>
+            <h3>综合评分</h3>
+        </div>
+        <ul id="other-score">
+        	<li id="design-level">
+            	<h3>设计水平：</h3>
+                <ul id="design-star" class="stars">
+                	<li class="star">
+                    	<span class="icon-star_two iconfont yellow"></span>
+                        <span class="icon-star_two iconfont gray"></span>
+                    </li>
+                	<li class="star">
+                    	<span class="icon-star_two iconfont yellow"></span>
+                        <span class="icon-star_two iconfont gray"></span>
+                    </li>
+                    <li class="star">
+                    	<span class="icon-star_two iconfont yellow"></span>
+                        <span class="icon-star_two iconfont gray"></span>
+                    </li>
+                    <li class="star">
+                    	<span class="icon-star_two iconfont yellow"></span>
+                        <span class="icon-star_two iconfont gray"></span>
+                    </li>
+                    <li class="star">
+                    	<span class="icon-star_two iconfont yellow"></span>
+                        <span class="icon-star_two iconfont gray"></span>
+                    </li>
+                </ul>
+                <div id="design-score" class="score"></div>
+            </li>
+            <li id="service-level">
+            	<h3>服务评分：</h3>
+                <ul id="service-star" class="stars">
+                	<li class="star">
+                    	<span class="icon-star_two iconfont yellow"></span>
+                        <span class="icon-star_two iconfont gray"></span>
+                    </li>
+                	<li class="star">
+                    	<span class="icon-star_two iconfont yellow"></span>
+                        <span class="icon-star_two iconfont gray"></span>
+                    </li>
+                    <li class="star">
+                    	<span class="icon-star_two iconfont yellow"></span>
+                        <span class="icon-star_two iconfont gray"></span>
+                    </li>
+                    <li class="star">
+                    	<span class="icon-star_two iconfont yellow"></span>
+                        <span class="icon-star_two iconfont gray"></span>
+                    </li>
+                    <li class="star">
+                    	<span class="icon-star_two iconfont yellow"></span>
+                        <span class="icon-star_two iconfont gray"></span>
+                    </li>
+                </ul>
+                <div id="service-score" class="score"></div>
+            </li>
+            <li id="quality-level">
+            	<h3>施工质量：</h3>
+                <ul id="quality-star" class="stars">
+                	<li class="star">
+                    	<span class="icon-star_two iconfont yellow"></span>
+                        <span class="icon-star_two iconfont gray"></span>
+                    </li>
+                	<li class="star">
+                    	<span class="icon-star_two iconfont yellow"></span>
+                        <span class="icon-star_two iconfont gray"></span>
+                    </li>
+                    <li class="star">
+                    	<span class="icon-star_two iconfont yellow"></span>
+                        <span class="icon-star_two iconfont gray"></span>
+                    </li>
+                    <li class="star">
+                    	<span class="icon-star_two iconfont yellow"></span>
+                        <span class="icon-star_two iconfont gray"></span>
+                    </li>
+                    <li class="star">
+                    	<span class="icon-star_two iconfont yellow"></span>
+                        <span class="icon-star_two iconfont gray"></span>
+                    </li>
+                </ul>
+                <div id="quality-score" class="score"></div>
+            </li>
+        </ul>
+    </div>
+    <!--Score End-->
+    <!--About Start-->
+    <div id="about-company">
+    	<!--Tab Start-->
+    	<ul id="company-tab" class="tab-slider">
+          <li class="current" target="about-box"><a class="tab" href="javascript:">公司介绍</a></li>
+          <li target="design-box" class=""><a class="tab" href="javascript:">设计师</a></li>
+          <li target="works-box" class=""><a class="tab" href="javascript:">精品案例</a></li>
+        </ul>
+        <!--Tab End-->
+        <!--About Company Start-->
+        <section id="about-box">
+        	<script type="text/template" id="company-about-template">
+				<div id="location" class="clearfix"><div class="iconfont icon-local"></div><p class="address">公司地址：<span class="con"><%=companys_data.company.address%></span></p></div>
+				<h3>公司简介：</h3>
+				<div id="about-content"><%=companys_data.company.content%></div>
+			</script>
+        </section>
+        <!--About Company End-->
+        <!--Designer Start-->
+        <section id="design-box">
+        	<ul id="designer-list" class="clearfix">
+				<script type="text/template" id="company-designer-template">
+					<% for(var i=0; i<companys_data.design.length; i++){ %>
+					<% var item = companys_data.design[i] %>
+                    <li>
+                        <img class="face" src=<%=item.thumb%>>
+                        <div class="right-txt">
+                            <h3 class="designer-name"><%=item.title%></h3>
+                            <div class="about-designer">
+                                <div class="title"><%=item.ranks%></div>
+                                <div class="works"><span class="icon-tuku iconfont"></span>作品：<span class="work-number"><%=item.productionnum%></span></div>
+                                <div class="follows"><span class="icon-fire iconfont"></span>人气：<span class="follow-number"><%=item.design_collectnum%></span></div>
+                            </div>
+                        </div>
+                    </li>
+					<% } %>
+                </script>
+            </ul>
+        </section>
+        <!--Designer End-->
+        <!--Works Start-->
+        <section id="works-box">
+        	
+        </section>
+        <!--Works End-->
+    </div>
+    <!--About End-->
+</section>
+<!--Main Content End-->
+<script src="{R}msite/base/js/zepto.min.js"></script>
+<script src="{R}msite/base/js/base.js"></script>
+<script src="{R}msite/base/js/underscore-template.js"></script>
+<script src="{R}msite/base/js/dxTab.js"></script>
+<script src="{R}msite/company/js/company_detail.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?78dc231309600aa470786dd036953521";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<div style="display:none">  
+	<script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb5fdc578640695ab74da0b40389ac54e' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+</body>
+</html>

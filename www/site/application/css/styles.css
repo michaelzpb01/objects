@@ -1,0 +1,565 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 16px;
+}
+@media only screen and (min-width: 359px) {
+	html {
+		font-size: 18px;
+	}
+}
+@media only screen and (min-width: 383px) {
+	html {
+		font-size: 19.2px;
+	}
+}
+@media only screen and (min-width: 413px) {
+	html {
+		font-size: 20.7px;
+	}
+}
+@media only screen and (max-width: 358px) and (max-height: 420px) {
+	/*iphone4*/
+}
+@media only screen and (min-width: 383px) and (max-height: 570px) {
+	/*MeiZu*/
+}
+body {
+	margin: 0;
+	padding: 0;
+	font: normal 0.875rem/1.625rem "STHeitiSC-Light","Microsoft YaHei";
+}
+h1, h2, h3, h4, h5, input, ul, li, p {
+	font-family: "STHeitiSC-Light","Microsoft YaHei";
+} 
+ul, li {
+	list-style: none;
+}
+section, #manager-banner {
+	margin: 0 auto;
+	max-width: 25.8125rem;
+}
+header {
+	width: 100%;
+	height: 2.75rem;
+	border-bottom: 1px solid #eaeaea;
+	background-color: #fff;
+}
+#logo {
+	float: left;
+	margin: 0.5rem 0 0 0.4375rem;
+	width: 11.625rem;
+	height: 1.8125rem;
+	line-height: 999px;
+	background: url(../img/uzhuanglogo.png) no-repeat left top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
+}
+.fix:after {
+	content: "";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both
+}
+#manager-banner {
+	width: 100%;
+}
+#manager-banner img {
+	max-width: 100%;
+	min-width: 100%;
+}
+#quality {
+	margin-top: -0.3em;
+}
+.mod-title {
+	margin: 0 0.3125rem 1.4375rem 0.3125rem;
+	height: 1.375rem;
+	border-bottom: 1px solid #78a9d3;
+	text-align: center;
+}
+.mod-title h2 {
+	position: relative;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0 0.75rem;
+	font: normal 1.125rem/2.75rem "STHeitiSC-Light","Microsoft YaHei";
+	background-color: #fff;
+	text-align: center;
+	color: #015eac;
+}
+.mod-title h2:before, .mod-title h2:after {
+	content: "";
+	position: absolute;
+	top: 1.27rem;
+	width: 0.3125rem;
+	height: 0.3125rem;
+	background-color: #015eac;
+	line-height: 0;
+	overflow: hidden;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.mod-title h2:before {
+	left: -0.1875rem;
+}
+.mod-title h2:after {
+	right: -0.1875rem;
+}
+.feature .icon {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+#features-1 {
+	margin: 0 auto 0.9375rem auto;
+	width: 16.875rem;
+	height: 7.375rem;
+	background-size: cover;
+	line-height: 999px;
+	overflow: hidden;
+}
+#features-1 .feature {
+	float: left;
+	padding-bottom: 0.3125rem;
+	width: 3rem;
+	height: 3.5rem;
+	line-height: 0;
+	text-align: center;
+}
+.feature .icon {
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	background-size: cover;
+}
+#features-1 .feature h3 {
+	font: normal 0.625rem/1.25rem "STHeitiSC-Light","Microsoft YaHei";
+	color: #787878;
+}
+#icon-liangfang .icon {
+	background: #fe7371 url(../img/svgicon/liangfang.svg) no-repeat center center;
+}
+#icon-sheji  .icon {
+	background: #4ed5a7 url(../img/svgicon/sheji.svg) no-repeat center center;
+}
+#icon-baojia  .icon {
+	background: #6ecaf9 url(../img/svgicon/baojia.svg) no-repeat center center;
+}
+#icon-jianli  .icon {
+	background: #f9bd52 url(../img/svgicon/jianli.svg) no-repeat center center;
+}
+#icon-yanshou  .icon {
+	background: #fa6e94 url(../img/svgicon/yanshou.svg) no-repeat center center;
+}
+#icon-huanbao  .icon {
+	background: #6bcbff url(../img/svgicon/huanbao.svg) no-repeat center center;
+}
+#icon-liangfang, #icon-sheji, #icon-jianli, #icon-yanshou {
+	position: relative;
+	margin-right: 3.5rem;
+}
+#icon-liangfang:after, #icon-sheji:after, #icon-jianli:after, #icon-yanshou:after {
+	content: "";
+	position: absolute;
+    top: 0.875rem;
+    right: -3.25rem;
+	width: 2.9375rem;
+	height: 0.3125rem;
+	background: url(../img/svgicon/circle.svg) no-repeat center center;
+	background-size: cover;
+}
+#apply {
+	margin: 0 0.4375rem;
+}
+.apply-input {
+	-webkit-appearance: none;
+	display: block;
+	margin-bottom: 0.625rem;
+	width: 100%;
+	height: 1.875rem;
+	border: 1px solid #e4e4e4;
+	font: normal 0.8125rem/1.875rem "STHeitiSC-Light","Microsoft YaHei";
+	text-indent: 0.5625rem;
+	color: #333;
+}
+.apply-input:focus {
+	border-color: #a4c6fd;
+	outline: none;
+}
+#apply .total {
+	margin-bottom: 0.6875rem;
+	font: normal 0.8125rem/2rem "STHeitiSC-Light","Microsoft YaHei";
+	color: #333;
+	text-align: center;
+}
+#apply .number {
+	font-style: normal;
+	color: #ff6600;
+}
+#apply .orange-btn {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 2.25rem;
+	font: normal 0.875rem/2.25rem "STHeitiSC-Light","Microsoft YaHei";
+	text-align: center;
+	border-width: 0;
+	background-color: #ff6600;
+	color: #fff;
+	cursor: pointer;
+	-webkit-border-radius: 0.3125rem;
+	-ms-border-radius: 0.3125rem;
+	-moz-border-radius: 0.3125rem;
+	-o-border-radius: 0.3125rem;
+	border-radius: 0.3125rem;
+}
+#apply .tip {
+	margin-bottom: 1rem;
+	font: normal 0.8125rem/1.375rem "STHeitiSC-Light","Microsoft YaHei";
+	text-align: center;
+	color: #ff7519;
+}
+#manager {
+	width: 100%;
+	overflow: hidden;
+}
+#manager h2 {
+	color: #fe7371;
+}
+#manager h2:before, #manager h2:after {
+	background-color: #fe7371;
+}
+#manager .mod-title {
+	border-color: #ffbebd;
+}
+#features-2 {
+	padding: 0 0 1.25rem 0.75rem;
+	width: 18.75rem;
+}
+#features-2 .feature {
+	float: left;
+	margin: 0 0.3125rem 0.3125rem 0;
+	width: 5.9375rem;
+	height: 3.9375rem;
+	text-align: center;
+	color: #fe7371;
+}
+#features-2 .number {
+	padding-top: 0.3125rem;
+}
+#features-2 em {
+	padding-right: 0.375rem;
+	font: normal 1.125rem Arial, sans-serif;
+}
+#features-2 .con {
+	color: #f9908f;
+}
+#steps {
+	color: #b6b6b6;
+}
+.step-name {
+	font: normal 1rem/1.75rem "STHeitiSC-Light","Microsoft YaHei";
+	color: #6ecaf9;
+}
+#steps .con {
+	line-height: 1.1875rem;
+}
+#step1, #step2, #step3, #step4, #step5, #step6, #step7 {
+	clear: both;
+}
+#step1 .step-img {
+	float: right;
+	width: 8.125rem;
+	height: 6.875rem;
+}
+#step1 .txt {
+	float: left;
+	margin: 2rem 0 0 1.625rem;
+}
+#step2 .step-img {
+    float: left;
+    margin: 1.25rem 0 0 0.875rem;
+    width: 6rem;
+    height: 7.3125rem;
+}
+#step2 .txt {
+    float: right;
+    margin: 3.5rem 1.125rem 0 0;
+    text-align: right;
+}
+#step3 .step-img {
+	float: right;
+	margin: 2.6875rem 0.9375rem 0 0;
+	width: 6.8125rem;
+	height: 5.3125rem;
+}
+#step3 .txt {
+	float: left;
+	margin: 3rem 0 0 1.625rem;
+}
+#steps h2 {
+	color: #6ecaf9;
+}
+#steps h2:before, #steps h2:after {
+	background-color: #6ecaf9;
+}
+#steps .mod-title {
+	border-color: #bbe6fc;
+}
+#step4 .step-img {
+	float: left;
+	margin: 3.0625rem 0 0 1.75rem;
+	width: 6.6875rem;
+	height: 5rem;
+}
+#step4 .txt {
+	float: right;
+	text-align: right;
+	margin: 3rem 1.625rem 0 0;
+}
+#step5 {
+	padding-top: 3.125rem;
+}
+#step5 .step-img {
+	float: right;
+	margin-right: 1.75rem;
+	width: 7.1875rem;
+	height: 6.6875rem;
+}
+#step5 .txt {
+	float: left;
+	margin: 0.375rem 0 0 1.625rem;
+}
+#step6 {
+	padding-top: 2.875rem;
+}
+#step6 .step-img {
+	float: left;
+	margin-left: 0.75rem;
+	width: 8.3125rem;
+	height: 5.5625rem;
+}
+#step6 .txt {
+	float: right;
+	margin: 0.1875rem 1rem 0 0;
+	text-align: right;
+}
+#step7 {
+	padding-top: 3rem;
+}
+#step7 .step-img {
+	float: right;
+	margin-right: 0.625rem;
+	width: 10.125rem;
+	height: 9.375rem;
+}
+#step7 .txt {
+	float: left;
+	margin: 2.75rem 0 0 1rem;
+}
+#follow {
+	margin: 50px auto 0 auto;
+	width: 204px;
+	height: 174px;
+	border: 1px solid #e7e7e7;
+}
+#follow .code {
+	display: block;
+	margin: 12px auto 0 auto;
+	width: 127px;
+	height: 127px;
+}
+#follow .txt {
+	font-size: 0.6875rem;
+	line-height: 30px;
+	text-align: center;
+}
+#bottom-tel, #free-btn {
+	clear: both;
+	display: block;
+	width: 100%;
+    height: 2.1875rem;
+    font: normal 0.8125rem/2.1875rem "STHeitiSC-Light","Microsoft YaHei";
+    letter-spacing: 2px;
+    color: #148aea;
+	background-color: #fff;
+    border-width: 1px 0;
+    text-decoration: none;
+    text-align: center;
+	cursor: pointer;
+}
+#bottom-tel {
+	margin: 1.75rem 0 0.2rem 0;
+	color: #148aea;
+	border: 1px solid #abd1f7;
+	border-left-width: 0;
+	border-right-width: 0;
+}
+#free-btn {
+	display: block;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	color: #fff;
+	border: 1px solid #ff6600;
+	background-color: #ff6600;
+	border-left-width: 0;
+	border-right-width: 0;
+}
+#errorCue{
+	position: fixed;
+	top: -2.5rem;
+	left: 0;
+	width: 100%;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	text-align: center;
+	background-color: #F06464;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-in 0s;
+	-ms-transition: all 0.3s ease-in 0s;
+	-moz-transition: all 0.3s ease-in 0s;
+	-o-transition: all 0.3s ease-in 0s;
+	transition: all 0.3s ease-in 0s;
+}
+#errorCue.ios {
+	position: absolute;
+	-webkit-transition: all 0.05s ease-in 0s;
+	-ms-transition: all 0.05s ease-in 0s;
+	-moz-transition: all 0.05s ease-in 0s;
+	-o-transition: all 0.05s ease-in 0s;
+	transition: all 0.05s ease-in 0s;
+}
+#errorMsg{
+	font: 0.75rem "Microsoft YaHei";
+	color: #fff;
+}
+#errorCue.show {
+	top: 0;
+	opacity: 1;
+}
+#alert-layer {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	max-width: 3000px;
+	background-color: rgba(0,0,0,0.6);
+}
+#layer-content {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	min-height: 1.875rem;
+	width: 72%;
+	background-color: #fff;
+	-webkit-border-radius: 0.4375rem;
+	-moz-border-radius: 0.4375rem;
+	-ms-border-radius: 0.4375rem;
+	-o-border-radius: 0.4375rem;
+	border-radius: 0.4375rem;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+#alert-con {
+	padding: 1.375rem 0.875rem 1.125rem 0.875rem;
+	font: normal 0.8125rem/1.125rem "STHeitiSC-Light","Microsoft YaHei";
+	color: #333;
+	text-align: center;
+}
+#layer-content .auto-close {
+	text-align: center;
+	color: #0068ea;
+	font: normal 0.6875rem/2.125rem "STHeitiSC-Light","Microsoft YaHei";
+	border-top: 1px solid #cccccc;
+}
+#layer-close {
+	position: absolute;
+	right: -0.4rem;
+	top: -0.4rem;
+	width: 1.25rem;
+	height: 1.25rem;
+	text-align: center;
+	background: url(../img/close.png) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#myform.disabled .apply-input {
+	color: #ccc;
+}
+#myform.disabled #applyBtn {
+	background-color: #ccc;
+}
+#name-box, #phone-box {
+	position: relative;
+}
+#myform #tip {
+	position: absolute;
+	left: 0;
+	top: -2.1875rem;
+	min-width: 7.5rem;
+	height: 1.75rem;
+	font: normal 0.75rem/1.75rem "STHeitiSC-Light","Microsoft YaHei";
+	background-color: #fef2eb;
+	color: #f08448;
+	border: 1px solid #f0884e;
+	-webkit-border-radius: 0.1875rem;
+	-moz-border-radius: 0.1875rem;
+	-o-border-radius: 0.1875rem;
+	-ms-border-radius: 0.1875rem;
+	border-radius: 0.1875rem;
+}
+#myform #tip:after {
+	content: "";
+	position: absolute;
+	left: 1.5rem;
+	bottom: -0.375rem;
+	width: 0.9375rem;
+	height: 0.875rem;
+	background: url(../img/tip-arrow.png) no-repeat center top;
+	background-size: cover;
+}
+#myform .tip-icon {
+	float: left;
+	margin: 0.4375rem 0 0 0.6875rem;
+	width: 0.875rem;
+	height: 0.875rem;
+	background: url(../img/error_icon.png) no-repeat center center;
+	background-size: cover;
+}
+#myform #tip-con {
+	float: left;
+	padding: 0 2.5rem 0 0.4375rem;
+	color: #ec651a;
+}
+#footer {
+	width: 100%;
+	margin-top: 0.2rem;
+	padding: 0.75rem 0 0.4rem 0;
+	text-align: center;
+	color: #cacaca;
+	background-color: #535353;
+	font: normal 0.875rem/1.5rem "STHeitiSC-Light","Microsoft YaHei";
+}
+#free-btn.document-bottom {
+	position: static;
+}

@@ -1,0 +1,71 @@
+@charset "utf-8";
+.container {
+    padding-top: 2.6875rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#company-list {
+	padding-top: 0.1875rem;
+	background-color: #fff;
+}
+.company-li {
+	position: relative;
+	padding: 0.875rem 0.4375rem 0.8125rem 0.4375rem;
+	border-bottom: 1px solid #f1f1f1;
+}
+.company-li>.company-logo {
+	float: left;
+	width: 4.25rem;
+	height: 4.25rem;
+	border: 1px solid #d3d3d3;
+}
+.company-li>.txt {
+	position: relative;
+	float: left;
+	width: 14rem;
+	height: 4.25rem;
+	padding-left: 0.5625rem;
+	word-break: break-all;
+}
+.company-li .company-name {
+	font-size: 0.75rem;
+	line-height: 1.125rem;
+}
+.company-li .tag {
+	height: 1.125rem;
+	font-size: 0.6875rem;
+	line-height: 1.125rem;
+	color: #8e8e8e;
+	overflow: hidden;
+}
+.company-li .data {
+	position: absolute;
+	bottom: -1px;
+	width: 14.625rem;
+	font-size: 0.6875rem;
+}
+.company-li .number {
+	color: #ff6600;	
+}
+.company-li .works, .company-li .designers, .company-li .score_total {
+	float: left;
+	width: 33.3%;
+}
+.company_link {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+}
+#empty-tip {
+    position: absolute;
+    left: 0;
+    top: 42%;
+    display: block;
+    font-size: 0.75rem;
+    color: #999;
+    text-align: center;
+    width: 100%;
+}

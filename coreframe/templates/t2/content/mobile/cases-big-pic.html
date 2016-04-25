@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, minimal-ui"/>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<!--iphone桌面快捷方式图标<link rel="apple-touch-icon" href="custom_icon.png">-->
+<meta charset="utf-8">
+<meta name="keywords" content="装修管家,量房设计,装修施工,材料商城,环保方案,装修服务,装修图库,建材商城,装修攻略、优装网、装修网、优装美家">
+<meta name="description" content="优装美家为您提供免费专业咨询、免费量房、免费设计、免费装修保险、免费环保检测、优装网-专业装修网优选装修公司、优选建材商品、优选装修管家、优选环保服务">
+<title>优装美家—管家式装修服务 有品质的低价</title>
+<link href="cases/css/big-pic.css" rel="stylesheet" type="text/css">
+<div style="display:none">
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?db5a9f8c0a86612046a5b5353db384c5";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb5fdc578640695ab74da0b40389ac54e' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+</head>
+<body>
+<div id='share_logo' style='margin:0 auto;display:none;'> 
+  <img src="{R}msite/base/img/share_logo.jpg"/> 
+</div>
+	<a href="##" class="go-back"><i class="iconfont icon-goback"></i></a>
+	<div class="page">
+        <div id='slider'>
+            <ul>
+                <li class="single-pic">
+                    <div class="pic-info">
+                        <img src="cases/img/big_img.png" alt="图片">
+						<div class="pic-local"><span class="num">1</span>/<span class="num">7</span></div>
+                    </div>
+                </li>
+                <li class="single-pic">
+                    <div class="pic-info">
+                        <img src="cases/img/frog.jpg" alt="图片">
+                    	<div class="pic-local"><span class="num">1</span>/<span class="num">7</span></div>
+                    </div>
+                </li>
+                <li class="single-pic">
+                    <div class="pic-info">
+                        <img src="cases/img/case2.png" alt="图片">
+                    	<div class="pic-local"><span class="num">1</span>/<span class="num">7</span></div>
+                    </div>
+                </li>
+                <li class="single-pic">
+                    <div class="pic-info">
+                        <img src="cases/img/case3.png" alt="图片">
+                    	<div class="pic-local"><span class="num">1</span>/<span class="num">7</span></div>
+                    </div>
+                </li>
+            </ul>
+		</div>
+    </div>
+<script type="text/javascript" src="base/js/zepto.min.js"></script>
+<script type="text/javascript" src="base/js/swipe.js"></script>
+<script type="text/javascript" src="base/js/pinchzoom.min.js"></script>
+<script type="text/javascript" src="base/js/setCenter.js"></script>
+<script type="text/javascript">
+	$(function () {
+        $('.pic-info').height($(window).height());
+        $('.pic-local').width($(window).width());
+
+        $('.pic-info').each(function(){
+            new RTP.PinchZoom($(this), {});
+        });
+
+        var swipe = new Swipe(document.getElementById('slider'), {
+            speed: 400
+        });
+
+        imgSize();
+        function imgSize(){
+        	var imgSize = $('.pic-info img'),
+        		winH = $(window).height(),
+        		winW = $(window).width();
+
+
+        	imgSize.each(function(){
+        		var imgH = $(this).height(),
+        			imgW = $(this).width();
+
+        		if(winW/winH < imgW/imgH){
+        			// $(this).addClass('width-size');
+
+        		} else{
+        			$(this).css({
+        				'height': winH,
+        				'width': winH*imgW/imgH
+        			});
+        		}
+        	});
+        }
+    })
+</script>
+<div style="display:none">  
+	<script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb5fdc578640695ab74da0b40389ac54e' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+</body>
+</html>

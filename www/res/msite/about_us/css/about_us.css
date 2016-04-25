@@ -1,0 +1,36 @@
+.container{
+	padding-top: 2.6875rem;
+	margin: 0 0.75rem;
+	text-align: center;
+	color: #333;
+}
+.container h3{
+	line-height: 1.625rem;
+	font-size: 0.875rem;
+	font-weight: bold;
+}
+.container p{
+	line-height: 1.3125rem;
+	font-size: 0.6875rem;
+}
+.company-info{
+	margin: 0.75rem 0 1.5rem;
+}
+.company-info .company-info-p{
+	margin-bottom: 1.125rem;
+	text-align: left;
+	text-indent: 2em;
+}
+.contact-us{
+	margin-bottom: 1.5rem;
+}
+.contact-us p{
+	text-align: left;
+}
+.about-tel{
+	display: block;
+	color: #333;
+}
+.join-us{
+	margin-bottom: 3rem;
+}

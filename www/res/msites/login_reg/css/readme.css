@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* Read me XuShu */
+#readme {
+    margin:2.6875rem 12px 0;
+}
+#readme>h2 {
+    pading: 10px 0;
+	font-size: 16px;
+	line-height: 32px;
+}
+#readme>h3 {
+	font-size: 14px;
+	line-height: 28px;
+}
+#readme>p {
+	font-size: 12px;
+	line-height: 23px;
+	padding-bottom: 10px;
+}

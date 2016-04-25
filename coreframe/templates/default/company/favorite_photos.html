@@ -1,0 +1,272 @@
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <META CHARSET="UTF-8">
+    <META HTTP-EQUIV="X-UA-COMPATIBLE" CONTENT="IE=EDGE">
+    <title>优装美家_让装修从此不烦•不凡_优装网-专业装修网</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="{R}uzhuang/zhuangxiu/css/base.css" />
+    <link type="text/css" rel="stylesheet" href="{R}uzhuang/zhuangxiu/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="{R}uzhuang/zhuangxiu/css/style.css">
+    <link type="text/css" rel="stylesheet" href="{R}uzhuang/zhuangxiu/css/member.css">
+    <link type="text/css" rel="stylesheet" href="{R}uzhuang/zhuangxiu/css/user_center.css">
+    <link href="{R}uzhuang/zhuangxiu/css/decoration-case.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+    var cookie_pre = "bId_";
+    var cookie_domain = '.uzhuang.com';
+    var cookie_path = '/';
+    var web_url = 'http://www.uzhuang.com/';
+    </script>
+    <script type="text/javascript" src="http://www.uzhuang.com/res/member/js/jquery.min.js"></script>
+    <script src="http://www.uzhuang.com/res/js/base.js"></script>
+    <script type="text/javascript" src="http://www.uzhuang.com/res/member/js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://www.uzhuang.com/res/member/js/Tab.js"></script>
+    <script type="text/javascript" src="http://www.uzhuang.com/res/member/js/star.js"></script>
+    <script type="text/javascript" src="http://www.uzhuang.com/res/member/js/my.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="http://www.uzhuang.com/res/member/js/html5shiv370.js"></script>
+    <script src="http://www.uzhuang.com/res/member/js/respond.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://www.uzhuang.com/res/member/css/m_style_ie.css">
+    <![endif]-->
+    <script src="http://www.uzhuang.com/res/js/wuzhicms_member.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="http://www.uzhuang.com/res/js/dialog/ui-dialog.css" />
+    <style>
+    .font-song {
+        font-family: "宋体", Arial;
+    }
+    </style>
+</head>
+ {T  'member','head'}
+<body>
+    <!--top start-->
+  
+    <!--top end-->
+    <!--head start-->
+    <!--head end-->
+      
+    <script src="{R}member/js/jscarousel.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#jsCarousel').jsCarousel({
+            onthumbnailclick: function(src) {
+                // 可在这里加入点击图片之后触发的效果
+                $("#overlay_pic").attr('src', src);
+                $(".overlay").show();
+            },
+            autoscroll: true
+        });
+
+        $(".overlay").click(function() {
+            $(this).hide();
+        });
+    });
+    </script>
+    <!--正文部分-->
+
+   
+<div class="container adframe">
+    <div class="row">
+        <div class="col-lg-12 col-xs-12">
+            {block=23}
+        </div>
+    </div>
+</div>
+    <div class="container memberframe">
+        <div class="row">
+            <div class="col-lg-12 col-xs-12">
+                <!--左侧开始-->
+                 <div class="memberleft">
+               
+                    {T 'member','left'}
+               
+            </div>
+                <!--左侧结束-->
+                <!--右侧开始-->
+                <style type="text/css">
+                .des-li {
+                    position: relative;
+                    float: left;
+                    margin-right: 35px;
+                    margin-left: 23px;
+                }
+                
+                .des-user {
+                    margin-bottom: 5px;
+                }
+                
+                .user-pic {
+                    width: 230px;
+                    height: 200px;
+                }
+                
+                .des_user {
+                    width: 280;
+                }
+                
+                .des-li img {
+                    margin-right: 10px;
+                }
+                
+                .orderlist {
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                }
+                </style>
+                <div class="memberright">
+                    <div class="memberbordertop">
+                        <section class="panel">
+                            <div class="panel-heading"><span class="title">装修案列</span></div>
+                            <div role="tabpanel" class="tab-pane fade active in" id="tabs1" aria-labelledby="1tab">
+                                <div class="panel-body" id="panel-bodys">
+                                {if $total}
+                                    <table class="table table-striped table-advance table-hover text-center">
+                                        <!--  <thead>
+                                   <tr>
+                                        <th class="tablehead">名称</th>
+                                        <th class="tablehead">封面</th>
+                                        <th class="tablehead">面积</th>
+                                        <th class="tablehead">造价</th>
+                                        <th class="tablehead">操作</th>
+                                    </tr>
+                                    </thead>-->
+                                        <tbody>
+                                            <form action="index.php?m=member&f=favorite&v=make_empty" class="form-inline" method="post" target="_self">
+                                                <div class="zx-des-check fix">
+                                                    <input type="checkbox" id="check_box" onclick="checkall('selectAll',this);">
+                                                    <span class="zx-checking-all">全选</span>
+                                                    <input class="zx-delete-btn" type="submit" value="删除" class="delete">
+                                                </div>
+                                                <ul class="zx-case-ul">
+                                                 <?  if(is_array($result))foreach ($result as $r) {?> 
+                                                    <li class="des-li">
+                                                        <div class="des-user">
+                                                            <a class="des-userlink" href="{$r['url']}"><img class="user-pic" src="{getImgShow($r[thumb],'small')}"></a>
+                                                        </div>
+                                                        <div class="des-infor">
+                                                            <input class="zx-choose-one" type="checkbox" name="fid[]" value="<?php echo $r['fid'];?>">
+                                                            <div class="fix"><a class="des-username" href="{$r['url']}">{$r['villagename']}{$configs['style'][$r['style']]}{$configs['house'][$r['housetype']]}</h5></a>
+                                                            </div>
+                                                            <h5 <p class="des-p">面积：{$r['area']}㎡&nbsp;|&nbsp;造价：{$r['cost']}元</p></h5>
+                                                    </li>
+                                                    <!--<tr>
+                                            <td align="left"><a href="http://www.uzhuang.com/show-136-1699-1.html" target="_blank">保利金泉 现代 三居</a></td>
+                                            <td><a href="http://www.uzhuang.com/show-136-1699-1.html" target="_blank"><img src="4e5a4120m80go000nsaohq.jpg" style="max-width: 100px;max-height: 100px;"></a></td>
+                                            <td>160</td>
+                                            <td>80000</td>
+                                            
+                                        </tr>-->  <?}?>
+                                                    <!--<tr>
+                                            <td align="left"><a href="http://www.uzhuang.com/show-136-119-1.html" target="_blank">同仁园 美式 二居</a></td>
+                                            <td><a href="http://www.uzhuang.com/show-136-119-1.html" target="_blank"><img src="f45d3120ic0dr000ns6w2w.jpg" style="max-width: 100px;max-height: 100px;"></a></td>
+                                            <td>114</td>
+                                            <td>40000</td>
+                                            
+                                        </tr>-->
+                                                </ul>
+                                        </tbody>
+                                </table>
+                                 {else}
+                                <table class="table table-striped table-advance table-hover text-center">
+                                    <thead>
+                                    <tr>
+                                        <th class="tablehead" style="height:180px;font-size: larger">您还没收藏过装修案例！</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                   {/if}
+                          
+                                   <table class="table table-striped table-advance table-hover text-center">
+                                   <tbody>
+                                     <tr>
+                                        <th class="tablehead"><a href="/xiaoguotu/" type="btn"  class="btn btn-lg btn-order">查看装修案例>></a></th>
+                                    </tr>
+                                    </tbody>
+                                   </table>
+                                    
+                                 </div>
+                                    <!--分页开始-->
+                                    <div class="paginationpage text-center">
+                                <nav>
+                                    <ul class="pagination">
+                                        {$pages}
+                                    </ul>
+                                </nav>
+                            </div>
+                                    <!--分页结束-->
+                                    </div>
+                        </section>
+                        </div>
+                        </div>
+                        <!--右侧结束-->
+                    </div>
+                </div>
+            </div>
+            <!--正文部分-->
+            {T  'member','foot'}
+            <!--footer start-->
+            <style>
+            #footer {
+                margin-top: 50px;
+            }
+            </style>
+            <script type="text/javascript">
+                $(":submit").click(function(){
+              if (!confirm("确认要删除这条信息吗?")) {
+            return false;
+          };
+        })
+            var _uid = getcookie('_uid');
+            if (_uid != null) {
+                $("#mylogined").removeClass('hide');
+                $("#mylogin").addClass('hide');
+                var _username = decodeURI(getcookie('truename'));
+                $("#myname").html(_username);
+                var modelid = getcookie('modelid');
+                if (modelid == 10) {
+                    $("#my-panel1").removeClass('hide');
+                } else if (modelid == 11) {
+                    $("#my-panel2").removeClass('hide');
+                } else {
+                    $("#my-panel3").removeClass('hide');
+                }
+                $(function($) {
+                    $("#mini_car").load("/index.php?m=order&f=json&v=mini_car");
+                });
+
+            }
+            setInterval("get_newmessage()", 10000);
+
+            function get_newmessage() {
+                $.getJSON("/index.php?m=member&f=json&v=get_newmessage", {
+                    time: Math.random()
+                }, function(json) {
+                    if (json.newmessage == 1) {
+                        $("#mymessage-tips").removeClass('hide');
+                    } else {
+                        $("#mymessage-tips").addClass('hide');
+                    }
+                });
+            }
+            get_newmessage();
+            </script>
+            <script type="text/javascript" src="http://www.uzhuang.com/res/uzhuang/base/js/form.js"></script>
+            <!--[if lt IE 9]>
+<script type="text/javascript" src="http://www.uzhuang.com/res/js/html5shiv.js"></script>
+<![endif]-->
+            <script type='text/javascript'>
+            (function() {
+                document.getElementById('___szfw_logo___').oncontextmenu = function() {
+                    return false;
+                }
+            })();
+            </script>
+</body>
+
+</html>

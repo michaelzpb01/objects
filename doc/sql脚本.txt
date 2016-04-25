@@ -1,0 +1,40 @@
+-----------------------------------------------------------周仓 begin-------------------------------------------------------
+新建第三方登录表wz_third_login
+CREATE TABLE `NewTable` (
+`id`  int(6) NOT NULL ,
+`uid`  int(6) NOT NULL ,
+`username`  varchar(100) NULL ,
+`login_way`  varchar(50) NULL ,
+`data`  longtext NOT NULL ,
+PRIMARY KEY (`id`)
+);
+
+wz_member表新加login_way_id、login_way字段
+
+ALTER TABLE `wz_member`
+ADD COLUMN `login_way_id`  varchar(50) NULL,
+ADD COLUMN `login_way`  varchar(50) NULL;
+
+wz_m_special表字段intervene给个默认值0
+
+ALTER TABLE `wz_m_special`
+MODIFY COLUMN `intervene`  int(10) NULL DEFAULT 0;
+
+wz_m_carousel表字段intervene给个默认值0
+
+ALTER TABLE `wz_m_carousel`
+MODIFY COLUMN `intervene`  int(10) NULL DEFAULT 0;
+
+第三方登录表wz_third_login 修改uid字段的类型和长度
+alter table wz_third_login modify uid varchar(500);
+
+第三方登录表wz_third_login 修改username字段的列名
+alter table wz_third_login change column username openid VARCHAR(500);
+
+删除member表的login_way、login_way_id字段
+alter table wz_third_login drop column login_way,drop column login_way_id;
+-----------------------------------------------------------周仓 end------------------------------------------------------------------------------------------------------------------周仓 end-------------------------------------------------------
+ALTER TABLE `wz_day_log`
+ADD COLUMN `condition`  int(10) not NULL,
+默认值为0
+-----------------------------------------------------------王双 end-------------------------------------------------------

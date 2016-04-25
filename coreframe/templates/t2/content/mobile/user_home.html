@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, minimal-ui"/>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<!--iphone桌面快捷方式图标<link rel="apple-touch-icon" href="custom_icon.png">-->
+<meta charset="utf-8">
+<meta name="keywords" content="装修管家,量房设计,装修施工,材料商城,环保方案,装修服务,装修图库,建材商城,装修攻略、优装网、装修网、优装美家">
+<meta name="description" content="优装美家为您提供免费专业咨询、免费量房、免费设计、免费装修保险、免费环保检测、优装网-专业装修网优选装修公司、优选建材商品、优选装修管家、优选环保服务">
+<title>优装美家—管家式装修服务 有品质的低价</title>
+<link rel="stylesheet" type="text/css" href="{R}msite/base/css/base.css">
+<link rel="stylesheet" type="text/css" href="{R}msite/base/css/case_base.css">
+<link rel="stylesheet" type="text/css" href="{R}msite/user_home/css/user_home.css">
+<link rel="stylesheet" type="text/css" href="{R}msite/company/css/company-list.css">
+<link rel="stylesheet" type="text/css" href="{R}msite/designer/css/designer-list.css">
+<div style="display:none">
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?db5a9f8c0a86612046a5b5353db384c5";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb5fdc578640695ab74da0b40389ac54e' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+</head>
+
+<body>
+<div id='share_logo' style='margin:0 auto;display:none;'> 
+  <img src="{R}msite/base/img/share_logo.jpg"/> 
+</div>
+<!--Top Bar Start-->
+<header> 
+  <!--<a id="logo" href="##" target="_self" title="优装美家"><i class="iconfont icon-jingyu"></i></a>--> 
+  <a id="go-back" target="_self" title="优装美家"><i class="iconfont icon-goback"></i></a>
+  <h1 class="header-title">我的美家</h1>
+  <a id="logout" href="#">退出</a>
+  <div id="menu" title="菜单"><i class="iconfont icon-cedaohang"></i></div>
+</header>
+<!--Right Menu Start-->
+<section id="right-menu">
+  <div class="sidebar-bg"></div>
+  <aside id="sidebar">
+    <ul class="sidebar-ul">
+        <li>
+            <a href="mobile-index.html" class="link-a"><i class="iconfont icon-home"></i><p>返回首页</p><i class="iconfont icon-arrow"></i></a>
+        </li>
+        <li>
+            <a href="mobile-cases.html" class="link-a"><i class="iconfont icon-tuku"></i><p>精品案例</p><i class="iconfont icon-arrow"></i></a>
+        </li>
+        <li>
+            <a href="mobile-company_list.html" class="link-a"><i class="iconfont icon-koubei"></i><p>口碑公司</p><i class="iconfont icon-arrow"></i></a>
+        </li>
+        <li>
+            <a href="mobile-building_list.html" class="link-a"><i class="iconfont icon-gongdi"></i><p>工地直播</p><i class="iconfont icon-arrow"></i></a>
+        </li>
+        <li>
+            <a href="mobile-user_home.html" class="link-a"><i class="iconfont icon-shejishi"></i><p>我的美家</p><i class="iconfont icon-arrow"></i></a>
+        </li>
+    </ul>
+    <a id="apply" href="mobile-sale_price.html?id=M站-菜单页">我要装修</a> <a id="bottom-tel" href="tel:400-6171-666"><i class="iconfont icon-dianhua"></i><span class="telephone">400-6171-666</span></a> </aside>
+</section>
+<!--Right Menu End-->
+<!--Top Bar End--> 
+<!--User Information Start-->
+<section id="user-inform">
+</section>
+<!--User Information End--> 
+<!--Tab Start-->
+<ul id="user-tab" class="tab-slider">
+  <li class="current" target="order-box"><a class="tab" href="javascript:">装修订单</a></li>
+  <li id="my-live" target="building-list"><a class="tab" href="javascript:">我的工地</a></li>
+  <li id="my-like" target="my-favor"><a class="tab" href="javascript:">我的收藏</a></li>
+</ul>
+<!--Tab End--> 
+<!--Orders List Start-->
+<section id="order-box">
+  <ul id="order-list">
+  </ul>
+</section>
+<!--Orders List End-->
+<!-- Building List S-->
+<section id="building-list">
+  <ul id="list-content" class="list-ul">
+    <!-- <li class="list-li">
+      <div class="manager-info">
+        <img src="{R}msite/building_live/img/manager-face.png" alt="" class="manager-face" />
+        <p class="manager-name">文丑</p>
+        <p class="manager-job">管家</p>
+        <p class="update-time"><i class="iconfont icon-days"></i><span>6小时前更新</span></p>
+      </div>
+      <div class="building-box">
+        <img src="{R}msite/building_live/img/building-img.jpg" alt="效果图">
+        <a href="##" class="building-info"><div class="info-div"><h3>泥木验收</h3><span>绣菊园吕先生家装修日志绣菊园吕先生家装修</span></div></a>
+      </div>
+    </li> -->
+    <script type="text/template" id="list-content-data">
+      <% for(var i=0; i < data.length; i++) { %>
+        <% var item = data[i] %>
+        <% if(item.status && item.status == 2) { %>
+          <li class="list-li">
+            <div class="building-status">
+              <a class="building-info"><div class="info-div"><h3><%= item.res %></h3><span><%= item.address %></span></div></a>
+            </div>
+          </li>
+        <% } else { %>
+          <li class="list-li">
+            <div class="manager-info">
+              <img class="manager-face" src=<%= item.personalphoto %>>
+              <p class="manager-name"><%= item.gjname %></p>
+              <p class="manager-job">管家</p>
+              <p class="update-time"><i class="iconfont icon-days"></i><span><%= item.addtime %></span></p>
+            </div>
+            <div class="building-box">
+              <% if(item.sitephoto) { %>
+                <img class="lazy-img"  data-original=<%= item.sitephoto %>>
+              <% } else {%>
+                <img class="lazy-img"  data-original=<%= item.recphoto %>>
+              <% } %>
+              <a class="building-info" href="mobile-live_detail.html?live_id=<%= item.orderid %>&myself=1"><div class="info-div"><h3><%= item.nodename %></h3><span><%= item.address %></span></div></a>
+            </div>
+          </li>
+        <% } %>
+      <% } %>
+    </script>
+  </ul>
+</section>
+<!-- Building List E-->
+<section id="my-favor"> 
+  <!--Works start-->
+  <div id="works-list">
+  		<div class="slide-tag mod-name">
+          <i class="iconfont icon-tuku"></i><h3>精品案例</h3>
+          <i class="iconfont icon-gotonext"></i>
+          <div class="total"><span id="total-number" class="number">0</span>套</div>
+        </div>
+		<ul id="content-now" class="slide_content" style="display:none">
+		</ul>
+  </div>
+  <!--Works end-->
+  <!--Company Start-->
+  <div id="favor-company">
+    <div class="slide-tag mod-name">
+        <i class="iconfont icon-koubei"></i><h3>口碑公司</h3>
+        <i class="iconfont icon-gotonext"></i>
+        <div class="total"><span id="company-number" class="number">0</span>家</div>
+    </div>
+    <div id="companys-list" class="slide_content" style="display:none">
+    	<ul id="company-list">
+			<script type="text/template" id="company-list-template">
+				<% $("#company-number").html(user_data.length);%>
+                <% for(var i=0; i<user_data.length; i++){ %>
+                    <% var item = user_data[i] %>
+                    <li class="company-li clearfix">
+                        <img class="company-logo" src=<%=item.companylogos%>>
+                        <div class="txt">
+                            <h2 class="company-name"><%=item.title%></h2>
+                            <h3 class="tag"><%=item.tese%></h3>
+                            <div class="data">
+                                <div class="works">案例：<span class="number"><%=item.photonum%></span></div>
+                                <div class="designers">设计师：<span class="number"><%=item.designnum%></span></div>
+                                <div class="score_total">综合评分：<span class="number"><%=item.avg_total%></span></div>
+                            </div>
+                        </div>
+						<a class="company_link" href=<%="mobile-company_detail.html?company_id="+item.id%>>&nbsp;</a>
+                    </li>
+                <% } %>
+            </script>
+        </ul>
+    </div>
+  </div>
+  <!--Company End-->
+  <!--Designers Start-->
+  <div id="favor-designer">
+    <div class="slide-tag mod-name">
+        <i class="iconfont icon-shejishi"></i><h3>设计师</h3>
+        <i class="iconfont icon-gotonext"></i>
+        <div class="total"><span id="designer-number" class="number">0</span>位</div>
+    </div>
+    <div id="designers-list" class="slide_content" style="display:none">
+        <ul id="designer-list" class="clearfix">
+            <script type="text/template" id="company-designer-template">
+				<% $("#designer-number").html(favor_designer.length)%>
+                <% for(var i=0; i<favor_designer.length; i++){ %>
+                <% var item = favor_designer[i] %>
+                <li>
+                    <% if(item.thumb1){ %>
+                      <img class="face" src=<%=item.thumb1%>>
+                    <% }else{ %>
+                      <img class="face" src=<%=item.thumb%>>
+                    <% } %>
+                    <div class="right-txt">
+                        <h3 class="designer-name"><%=item.title%></h3>
+                        <div class="about-designer">
+                            <div class="title"><%=item.ranks%></div>
+                            <div class="works"><span class="icon-tuku iconfont"></span>作品：<span class="work-number"><%=item.productionnum%></span></div>
+                            <div class="follows"><span class="icon-fire iconfont"></span>人气：<span class="follow-number"><%=item.design_collectnums%></span></div>
+                        </div>
+                    </div>
+					<a class="designer-link" href=<%="mobile-designer.html?designer_id="+item.id%>>&nbsp;</a>
+                </li>
+                <% } %>
+            </script>
+        </ul>
+    </div>
+  </div>
+  <!--Designers End-->
+  <!--Works start-->
+  <div id="live-box">
+      <div class="slide-tag mod-name">
+          <i class="iconfont icon-gongdi"></i><h3>工地直播</h3>
+          <i class="iconfont icon-gotonext"></i>
+          <div class="total"><span id="live-number" class="number">0</span>家</div>
+        </div>
+    <ul id="live-list" class="slide_content list-ul" style="display:none">
+    </ul>
+  </div>
+  <!--Works end-->
+</section>
+<!--Footer Start-->
+<footer id="footer">
+    <ul class="platforms">
+        <li class="active"><a href="mobile-index.html"><cite class="iconfont icon-shouji"></cite>触屏版</a></li>
+        <li class="vline"></li>
+        <li><a href="http://www.uzhuang.com/index.php?from=wap"><cite class="iconfont icon-diannao"></cite>电脑版</a></li>
+        <li class="vline"></li>
+        <li><a href="mobile-about_us.html"><cite class="iconfont icon-guanyuwomen"></cite>关于我们</a></li>
+    </ul>
+    <p class="company-name">北京优装网信息科技有限公司<br>京ICP备15022586号-1</p>
+</footer>
+<!--Footer End-->
+<script type="text/template" id="user-inform-data">
+    <div id="user-head">
+      <img id="user-face" src=<%= member.avatar%>>
+      <h2 id="user-name"><%= member.nickname%></h2>
+    </div>
+</script>
+<script type="text/template" id="order-data">
+  <% for(var i=0; i<data.length; i++){ %>
+    <% var item = data[i] %>
+    <li class="clearfix">
+      <a class="order-link" href=mobile-user_home_myorder.html?bianhao=<%= item.bianhao%>>
+        <div class="local-name">
+          <h3><%= item.dizhi%></h3>
+          <div class="tag"><%= item.zuixinjindu%></div>
+        </div>
+        <div class="state">
+          <div class="order-days"><i class="iconfont icon-days"></i><b><%= item.kaigongriqi%></b></div>
+          <div class="order-number"><i class="iconfont icon-ordericon"></i>订单号：<b><%= item.bianhao%></b></div>
+        </div>
+        <i class="iconfont icon-gotonext"></i>
+      </a>
+    </li>
+  <% } %>
+</script>
+<script type="text/template" id="content-now-data">
+  <% for (var i=0; i<data.length; i++){ %>
+    <% var item = data[i] %>
+    <% if(item.status == 1){ %>
+      <li class="content-li">
+        <img class="lazy-img" data-original=<%= item.cover%>>
+        <a href=mobile-detail_case.html?id=<%= item.id%> class="content-size"><div><h3><%= item.name%></h3><p>
+            <% for(key in item.style) { %>
+              <span><i class="dian"></i><%= item.style[key]%></span>
+            <% } %>
+            <i class="dian"></i><span><%= item.housetype%></span></p></div></a>
+      </li>
+    <% } %>
+  <% } %>
+</script>
+
+<script type="text/template" id="live-list-data">
+  <% for(var key in data) { %>
+    <% var item = data[key] %>
+    <li class="list-li">
+      <div class="manager-info">
+        <img class="manager-face" src=<%= item.personalphoto %>>
+        <p class="manager-name"><%= item.gjname %></p>
+        <p class="manager-job">管家</p>
+        <p class="update-time"><i class="iconfont icon-days"></i><span><%= item.addtime %></span></p>
+      </div>
+      <div class="building-box">
+        <% if(item.sitephoto) { %>
+          <img class="lazy-img"  data-original=<%= item.sitephoto %>>
+        <% } else {%>
+          <img class="lazy-img"  data-original=<%= item.recphoto %>>
+        <% } %>
+        <a class="building-info" href="mobile-live_detail.html?live_id=<%= item.orderid %>"><div class="info-div"><h3><%= item.nodename %></h3><span><%= item.logname %></span></div></a>
+      </div>
+    </li>
+  <% } %>
+</script>
+<script src="{R}msite/base/js/zepto.min.js"></script>
+<script src="{R}msite/base/js/underscore-template.js"></script>
+<script src="{R}msite/base/js/base.js"></script>
+<script src="{R}msite/base/js/dxTab.js"></script>
+<script src="{R}msite/base/js/dxlazyload.js"></script>
+<script src="{R}msite/user_home/js/user_home.js"></script>
+</body>
+</html>
