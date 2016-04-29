@@ -62,9 +62,24 @@
 			</div>
 		</section>
 		
-		
+		http://mdev.uz.com/api/subscribe.php?action=subscribe&temp=3&type=designer
 	</body>
 </html>
 <script type="text/javascript">
-	
+	function getPerson(){
+		$.ajax({
+    		type: "GET",
+    		url: "api/subscribe.php?action=subscribe&temp=3&type=designer",
+    		dataType: "text",
+    		success: function(number){
+    			alert(number)
+    			if(number){
+    				$('#userTotal').text(number);
+    			}
+    		},
+			error: function(){
+            	alert('您当前网络异常');
+            }
+    	});
+	}
 </script>

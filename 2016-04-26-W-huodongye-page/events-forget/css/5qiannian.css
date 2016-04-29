@@ -1,0 +1,87 @@
+.bg_6a0{ background:#6a0207;}
+.bg_ecc{ background:#eccd9c;}
+.bg_f0d{ background:#f0d6af;}
+.bg_e8c{ background:#e8c285;}
+.bg_580{ background:#580005;}
+.wrap1200{ margin:0 auto; width:1200px;}
+.bg_272{ background:#272727;}
+.footFloor{position: fixed; bottom: 0px;  z-index: 997; width: 100%;_position:absolute;_left:expression(eval(document.documentElement.scrollLeft));_top:expression(eval(document.documentElement.scrollTop + document.documentElement.clientHeight - 150))}
+.footFloor .wrap1200{ background:url(../img/footFloor_bg.jpg) no-repeat; height:150px;}
+body{ padding-bottom:150px;}
+/*footFloor */
+
+.user-info{
+	height: 42px;
+	float:right;
+	margin:77px 65px 0 0;
+}
+.user-info .your-name input, .user-info .your-telephone input{
+	display: block;
+	width: 130px;
+	height: 38px;
+	margin-right: 5px;
+	padding-left: 15px;
+	border: 1px solid #d43f3f;
+	background:none;
+	font: 16px/38px "Microsoft YaHei";
+	color:#f6f6f6;
+}
+.user-info input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #f6f6f6;
+}
+.user-info input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #f6f6f6;
+}
+.user-info input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #f6f6f6;
+}
+.user-info input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #f6f6f6;
+}
+.user-info .sub{
+	width: 127px;
+	height: 40px;
+	background:none;
+	text-indent:-9999px;
+	color: #fff;
+	border: 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	/*edite xushu 0916*/
+	cursor: pointer;
+}
+.user-info .mr5{
+	margin-right: 5px;
+}
+.user-info .mr10{
+	margin-right: 10px;
+}
+.user-info .select_box .tag_select,.user-info .select_box .tag_select_hover{
+	background:url(../img/jiantou.png) no-repeat 84px 0px;
+	padding:0;
+	overflow: hidden;
+}
+.user-info .form-control{
+	float: left;
+	margin-left: -130px;
+}
+.user-info .select_box{ position:relative; z-index:9999;}
+.user-info .select_box .tag_select_open{ background:url(../img/jiantou.png) no-repeat 84px -37px; padding:0;}
+.user-info .select_box .tag_options{ background:#fff; border:1px solid #E1E2E4; width:129px; line-height:36px; max-height:216px; overflow-y:auto; top:inherit; bottom:38px; left:-1px;}
+.user-info .select_box .tag_options li{ padding:0px 8px 0px 15px; line-height:36px; margin-bottom:0;}
+.user-info .select_box .open_selected{ background:#f8f9f9;}
+.user-info .select_box{
+	float: left;
+	width: 114px;
+	height: 38px;
+	padding-left:15px;
+	line-height: 38px;
+	text-align: left;
+	background-color:inherit;
+	border: 1px solid #d43f3f;
+	color:#f6f6f6;
+	font: 16px/36px "Microsoft YaHei";
+}
+.hide{ display:none;}

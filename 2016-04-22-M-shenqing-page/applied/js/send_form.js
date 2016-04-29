@@ -57,7 +57,7 @@ function isWeiBo() {
 	}
 }
 $(function(){
-	getPerson();
+	//getPerson();
 	$("#go-back").on('click', function(){
 		goBack();
 	});
@@ -221,6 +221,7 @@ $(function(){
 	    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
 	    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
 	}
+	
 	//发送提交请求
     function checkForms() {
     	var fromPage; //来源变量
@@ -246,7 +247,8 @@ $(function(){
 				return false;
 			}
 		}
-        $.ajax({
+		//发送请求start
+       	$.ajax({
         	type: "POST",
         	url: "api/mmwap.php?action=fbform&title="+$("#user-name").val()+"&telephone="+$("#user-pwd").val()+"&areaid="+wbbm_province+"&source="+fromPage+"&time="+new Date().getTime(),
         	dataType: "json",
@@ -257,7 +259,6 @@ $(function(){
             success: function(res){
             	if(res['flag']){
             		alertOpen(res['msg']);
-            		getPerson();
 					res="";
 					$(".apply-input").val("");
 					$("#select-01").val("0");
@@ -273,9 +274,12 @@ $(function(){
             },
 			error: function(){
 				$('#applyBtn').removeAttr('disabled').val("免费申请");
-            	alert('您当前网络异常');
+            	alert('您当前网络异常,');
             }
         });
+        
+       	//发送请求end
+       
         return false;
     }
 	//微博报名
@@ -320,7 +324,7 @@ $(function(){
             success: function(res){
             	if(res['flag']){
             		alertOpen(res['msg']);
-            		getPerson();
+            		//getPerson();
 					res="";
 					$(".apply-input").val("");
 					$(".apply-select").val("0");
@@ -342,21 +346,22 @@ $(function(){
         return false;
     }
 	//获取报名人数
-    function getPerson(){
-    	$.ajax({
-    		type: "GET",
-    		url: "api/wap.php?action=fbcount",
-    		dataType: "text",
-    		success: function(number){
-    			if(number){
-    				$('#userTotal').text(number);
-    			}
-    		},
-			error: function(){
-            	alert('您当前网络异常');
-            }
-    	});
-    }
+//  function getPerson(){
+//  	$.ajax({
+//  		type: "GET",
+//  		url: "api/wap.php?action=fbcount",
+//  		dataType: "text",
+//  		success: function(number){
+//  			alert(number)
+//  			if(number){
+//  				$('#userTotal').text(number);
+//  			}
+//  		},
+//			error: function(){
+//          	alert('1您当前网络异常');
+//          }
+//  	});
+//  }
 	//弹出层方法
 	function setLayerTop() {
 		var layer_top = (w_h- $("#layer-content").height())/2+managerPage.scrollTop;

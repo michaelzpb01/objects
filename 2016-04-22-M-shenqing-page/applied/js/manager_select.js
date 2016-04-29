@@ -7,11 +7,11 @@ var wbbm_province = 0; //获取省份 0为未选择
         $.ajax({
             type: "POST",
             dataType: "json",
-            url: "http://www.uzhuang.com/api/mmwap.php?action=fbcity",
+            url: "/api/mmwap.php?action=fbcity",
             cache: false,
             success: function(dataResult) {
                 if (dataResult) {
-                    var provinceHtml = "<option  value='0'>选择城市</option>";
+                    var provinceHtml = "<option  value='0'>城市</option>";
 					var province = dataResult.data;
                     for (var key in province) {
                             provinceHtml += '<option value='+province[key].lib +'>' + province[key].name + '</option>';
